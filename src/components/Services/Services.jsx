@@ -24,7 +24,7 @@ const Services = () => {
     <p>ELECTRICAL TENDERS</p>
         </div>
         <div className='cards'>
-        <img src={cctv} alt='cctv'></img>
+        <img src={cctv} alt='cctv'></img> 
         <p>CCTV TENDERS</p>
         </div>
 
