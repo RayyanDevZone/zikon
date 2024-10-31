@@ -21,7 +21,7 @@ const Project = () => {
         <div className="card-sites">
           {" "}
           <img src={project3} alt=""></img>
-          <h1>PROJECT 3</h1>
+          <h1>PROJECT 3</h1> 
         </div>
       </div>
     </div>
