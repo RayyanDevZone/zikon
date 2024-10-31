@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div className='app'>
  
-      <Firstpage/>
+      <Firstpage/> 
       <Aboutus/>
       <Services/>
       <Project/>
