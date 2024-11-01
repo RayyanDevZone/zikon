@@ -17,7 +17,7 @@ const Firstpage = () => {
 </div>
       </div>
     </>
-  );
+  );  
 }
 
 export default Firstpage;
