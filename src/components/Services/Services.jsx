@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react'  
 import './Services.scss'
 import civil from '../../images/civil.jpg'
 const Services = () => {

@@ -20,7 +20,7 @@ const Project = () => {
           {" "}
           <img src="https://images.pexels.com/photos/11176811/pexels-photo-11176811.jpeg?auto=compress&cs=tinysrgb&w=400" alt=""></img>
           <h1>PROJECT 3</h1> 
-        </div>
+        </div> 
       </div>
     </div>
   );
