@@ -6,7 +6,7 @@
     flex-direction: column;
 }
 .grey{
-    height: 55%;
+    min-height: 55%;
     width: 100%;
     background-color: grey;
     color: black;
@@ -59,4 +59,21 @@ font-family: "Poppins", sans-serif;
         height: 100%;
         width: 25%;
     }
+}
+@media (max-width: 480px){
+    .card-container-grey{
+        flex-direction: column;
+        >  .card-grey{
+            width: 100%;
+        }
+    }
+    .card-container-white{
+        flex-direction: column;
+        height: 90%;
+        >.card-white{
+            width: 100%;
+        }
+    }
+  
+
 }
