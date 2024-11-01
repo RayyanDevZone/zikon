@@ -55,3 +55,14 @@ h1{
         font-family: "Space Grotesk", sans-serif;
     }
 }
+@media (max-width: 480px){
+    .about{
+        flex-direction: column;
+    }
+    .left-about{
+        width: 100%;
+    }
+.right-about{
+    width: 100%;
+}
+}

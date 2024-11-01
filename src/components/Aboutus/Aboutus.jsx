@@ -16,7 +16,7 @@ const Aboutus = () => {
         <img src={about} alt="about"></img>
       </div>
     </div>
-  );
+  ); 
 };
 
 export default Aboutus;
