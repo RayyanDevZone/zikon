@@ -1,6 +1,6 @@
 import React from "react";
 import "./Aboutus.scss";
-import about from '../../images/secpage.jpg'
+
 const Aboutus = () => {
   return (
     <div className="about">
@@ -13,7 +13,7 @@ const Aboutus = () => {
         </div>
       </div>
       <div className="right-about">
-        <img src={about} alt="about"></img>
+        <img src="https://images.pexels.com/photos/439416/pexels-photo-439416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="about"></img>
       </div>
     </div>
   ); 

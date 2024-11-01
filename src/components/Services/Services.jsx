@@ -1,8 +1,6 @@
 import React from 'react'
 import './Services.scss'
 import civil from '../../images/civil.jpg'
-import cctv from '../../images/cctv.jpg'
-import electrical from '../../images/electrical.jpg'
 const Services = () => {
   return (
     <div className='services'>
@@ -20,11 +18,11 @@ const Services = () => {
         <p>CIVIL TENDERS</p>
     </div>
     <div className='cards'>
-    <img src={electrical} alt='electrical'></img>
+    <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=400" alt='electrical'></img>
     <p>ELECTRICAL TENDERS</p>
         </div>
         <div className='cards'>
-        <img src={cctv} alt='cctv'></img> 
+        <img src="https://images.pexels.com/photos/5650141/pexels-photo-5650141.jpeg?auto=compress&cs=tinysrgb&w=400" alt='cctv'></img> 
         <p>CCTV TENDERS</p>
         </div>
 
