@@ -3,7 +3,6 @@
     width: 100%;
     background: url('../../images/footer.png') no-repeat center center;
     background-size: cover; 
-
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -11,7 +10,7 @@
     color:  white;
 }  
 .address{
-    // border: 1px solid black;d
+    // border: 1px solid black;
     height: 100%;
     width: 25%;
     display: flex;
@@ -22,7 +21,7 @@
 .office-hours{
     // border: 1px solid black;
     height: 100%;
-    width: 25%;
+    width: 25%; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,4 +58,13 @@ h3{
 p{
     font-family: "Space Grotesk", sans-serif;
     font-size: small;
+}
+@media (max-width: 480px){
+.footer{
+    flex-direction: column;
+}
+.address,.contact,.office-hours{
+    padding-left: 20px;
+    width: 100%;
+}
 }

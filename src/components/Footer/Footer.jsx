@@ -18,7 +18,7 @@ Weekends by appointment</p>
       </div>
       <div className="contact">
         <h3>Stay connected</h3>
-        <p><IoIosCall /> +91 636853005</p>
+        <p><IoIosCall /> +91 636853005</p> 
         <p><MdEmail /> zrassociates318@gmail.com</p>
       </div>
     </div>
