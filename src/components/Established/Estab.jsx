@@ -1,5 +1,6 @@
 import React from 'react'
 import './Estab.scss'
+import hunet from '../../images/hunet.jpeg'
 const Estab = () => {
   return (
     <div className='estab'>
@@ -19,10 +20,16 @@ const Estab = () => {
       </div>
       <div className='white'>
         <div className='card-container-white'> 
-          <div className='card-white'></div>
-          <div className='card-white'></div> 
-          <div className='card-white'></div>
-          <div className='card-white'></div>
+          <div className='card-white'>
+            <img src={hunet} alt='hunet'></img>
+          </div>
+          <div className='card-white'>
+            <img src="https://www.ltts.com/themes/custom/lnttech/images/media_kit_logos/stacked/stacked.jpg" alt='L&T'></img>
+          </div> 
+          <div className='card-white'>
+            <img className='railway' src="https://upload.wikimedia.org/wikipedia/hi/7/7b/Indian_Railways_logo.png" alt='indian railway'></img>
+          </div>
+       
         </div>
       </div>
     </div>

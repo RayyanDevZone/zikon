@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="footer">
       <div className="address">
         <h3>Address</h3>
-        <p>123 Anywhere St.<br/> Any City, ST 12345 <br/>(PWD parking available)</p>
+        <p> 380/2 <br/>GTB NAGAR KARELI<br/> PRYAGRAJ, UTTAR PRADESH.</p>
       </div>
       <div className="office-hours">
         <h3>office hours</h3>
