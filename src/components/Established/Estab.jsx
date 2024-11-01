@@ -18,7 +18,7 @@ const Estab = () => {
         </div>
       </div>
       <div className='white'>
-        <div className='card-container-white'>
+        <div className='card-container-white'> 
           <div className='card-white'></div>
           <div className='card-white'></div> 
           <div className='card-white'></div>

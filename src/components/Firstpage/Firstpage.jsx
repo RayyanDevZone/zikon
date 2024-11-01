@@ -10,7 +10,7 @@ const Firstpage = () => {
   <div className='descLeft'>
   <h1>Delivering Superior Standards in Every Project.</h1>
   <div className='btn'>
-  <a href="https://wa.me/916386535005" target="_blank" rel="noopener noreferrer">
+  <a href="https://wa.me/919161642136" target="_blank" rel="noopener noreferrer">
   <button>GET IN TOUCH</button>
   </a></div>
   </div>
