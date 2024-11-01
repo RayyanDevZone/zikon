@@ -17,7 +17,7 @@ const Services = () => {
         <img src={civil} alt='civil'></img>
         <p>CIVIL TENDERS</p>
     </div>
-    <div className='cards'>
+    <div className='cards'> 
     <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=400" alt='electrical'></img>
     <p>ELECTRICAL TENDERS</p>
         </div>
