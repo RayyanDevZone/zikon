@@ -1,5 +1,5 @@
  .clients{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     box-sizing: border-box;
     background-color: white;
@@ -24,7 +24,7 @@
  }
  .bottom-clients{
     // border: 1px solid blue;
-    height: 50%;
+    min-height: 50%;
     width: 90%;
     display: flex;
     align-items: center;
@@ -34,7 +34,7 @@
         height: 100%;
         width: 20%;
         // border: 1px solid brown;
-        box-sizing: border-box;
+        box-sizing: border-box;  
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -54,4 +54,14 @@
     font-family: "Space Grotesk", sans-serif;
     font-size: 12px;
     font-weight: 600;
+}
+@media (max-width: 480px){
+    .bottom-clients{
+        flex-direction: column;
+        > .card-review{
+            width: 100%;
+        }
+    }
+   
+
 }
