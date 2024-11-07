@@ -15,6 +15,10 @@
     display: flex;
  
 }
+.upperservice{
+    align-items: center;
+    justify-content: space-between;
+}
 .lowerservice{
     justify-content: space-evenly;
     align-items: center;
@@ -51,8 +55,22 @@
     // border: 1px solid rebeccapurple; 
     box-sizing: border-box;
     display: flex;
-    padding: 15px 85px;
-    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding-left: 85px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    width: 30%;
+   >h1{
+    font-family: "Bowlby One", sans-serif;
+    font-weight: 400;
+   }
+   >svg{
+    font-size: 40px;
+}
+  
 }
 .descService{
     // border: 1px solid greenyellow;

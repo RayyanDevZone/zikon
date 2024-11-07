@@ -1,0 +1,203 @@
+.Fpage {
+  height: 100vh;
+  width: 100%;
+  //   background-color: #002642;
+  background-color: black;
+}
+.upper-fpage {
+  height: 40%;
+  width: 100%;
+//   border: 1px solid white;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  > p {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    // border: 1px solid white;
+    width: 90%;
+    font-size: 5rem;
+    color: white;
+  }
+}
+.lower-fpage {
+//   border: 1px solid white;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > .left-lower {
+    // border: 1px solid white;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    > .upper-left {
+      //   border: 1px solid white;
+      width: 60%;
+      > p {
+        color: grey;
+      }
+    }
+    > .lower-left {
+      //   border: 1px solid white;
+      width: 60%;
+      > p {
+        color: grey;
+      }
+    }
+  }
+  > .middle-lower {
+    // border: 1px solid white;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    // align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    > img {
+      height: 90%;
+      width: 100%;
+      border-radius: 200px;
+    }
+    > .butn {
+    //   border: 1px solid white;
+      width: auto;
+      height: 80px;
+      position: absolute;
+      left: 64%;
+      > a {
+        > button {
+          border-radius: 50px;
+          background-color: #ccff00;
+          width: 70px;
+          height: 70px;
+          > svg {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  > .right-lower {
+    // border: 1px solid white;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    > p {
+      color: grey;
+      width: 60%;
+    }
+    > .btn-right {
+        padding: 5px;
+      border: 1px solid grey;
+      width: 60%;
+      height: 50px;
+      border-radius: 50px;
+      transform: rotate(90deg);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-sizing: border-box;
+      > p {
+        color: grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: 1px solid white;
+        width: auto;
+        font-size: 14px;
+        padding: 0px;
+      }
+      > svg {
+        width: auto;
+        font-size: 30px;
+        color: grey;
+        background-color: white;
+        border-radius: 50%;
+        // border: 1px solid white;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .Fpage {
+    .upper-fpage {
+      height: auto;
+      p {
+        font-size: 35px;
+        text-align: center;
+      }
+    }
+    .lower-fpage {
+      flex-direction: column;
+      height: 80%;
+      padding: 20px 0;
+
+      .left-lower {
+        order: 2;
+        width: 60%;
+        height: auto;
+        margin-bottom: 20px;
+
+        .upper-left p {
+          font-size: 14px;
+        }
+        .lower-left p {
+          font-size: 16px;
+          width: 90%;
+        }
+      }
+
+      .middle-lower {
+        order: 1;
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+
+        >img {
+          width: 90%;
+          height: auto;
+        }
+        >.butn{
+            left: 78%;
+        }
+        >.butn button {
+          padding: 8px;
+          font-size: 16px;
+         
+        }
+      }
+
+      .right-lower {
+        order: 3;
+        width: 50%;
+        height: 40%;
+        // padding: 20px 0;
+        justify-content: space-around;
+        p {
+          width: 90%;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        .btn-right {
+          width: 80%;
+          > p {
+            margin: 0px;
+          }
+         
+        }
+      }
+    }
+  }
+}

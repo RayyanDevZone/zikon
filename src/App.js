@@ -7,11 +7,14 @@ import Estab from './components/Established/Estab'
 import Clients from './components/Clients/Clients'
 import Aboutus from './components/Aboutus/Aboutus'
 import Footer from './components/Footer/Footer'
+import Fpage from './components/Fpage/Fpage'
+import Navbar from './components/Navbar/Navbar'
 const App = () => {
   return (
     <div className='app'>
- 
-      <Firstpage/> 
+    <Navbar/>
+ <Fpage/>
+      {/* <Firstpage/>  */}
       <Aboutus/>
       <Services/>
       <Project/>

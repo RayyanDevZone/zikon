@@ -1,10 +1,10 @@
 import React from "react";
 import "./Project.scss";
-
+import { IoArrowForwardCircleOutline } from "react-icons/io5";
 const Project = () => {
   return (
     <div className="project">
-      <h1>Projects</h1>
+      <div className="h1"><h1>Projects</h1><IoArrowForwardCircleOutline /></div>
       <div className="projectsimages">
         <div className="card-sites">
           {" "}
@@ -24,6 +24,6 @@ const Project = () => {
       </div>
     </div>
   );
-};
+}; 
 
 export default Project;
