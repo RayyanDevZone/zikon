@@ -15,7 +15,7 @@ const Services = () => {
 </div>
     </div>
     <div className='lowerservice'>
-    <div className='cards'>
+    <div className='cards'> 
         <img src={civil} alt='civil'></img>
         <p>CIVIL TENDERS</p>
     </div>

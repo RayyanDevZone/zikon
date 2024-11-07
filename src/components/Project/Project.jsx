@@ -23,7 +23,7 @@ const Project = () => {
         </div> 
       </div>
     </div>
-  );
+  );  
 }; 
 
 export default Project;
