@@ -15,7 +15,7 @@ background-image: url(../../images/secbg.png);
 background-position: center;
 background-size: cover;
 // border: 1px solid red;
-height: 100%;
+
 >.h1{
     color: #CCFF00;
     display: flex;
@@ -64,6 +64,10 @@ height: 100%;
     border-radius: 35px;
     box-sizing: border-box;
     padding: 10px;
+    transition: transform 0.3s ease-in-out;
+&:hover {
+    transform: scale(1.02);
+  }
     >img{
      background-position: center;
      background-size: cover;
