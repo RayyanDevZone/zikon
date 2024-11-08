@@ -74,7 +74,7 @@ background-size: cover;
        height: 400px;
        width: 99%;
        overflow: hidden;
-       border-radius: 25px;
+       border-radius: 25px 25px 5px 5px;
     //    border: 1px solid red;
     }
     >h1{
@@ -88,7 +88,7 @@ background-size: cover;
         box-sizing: border-box;
         padding: 0px 15px;
         margin-top: 10px;
-        border-radius: 25px;
+        border-radius: 5px 5px 25px 25px;
         font-weight: 400;
         // border: 1px solid red;
         >svg{
