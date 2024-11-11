@@ -1,105 +1,109 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
-.project{
-    border-radius: 25px 25px 0px 0px;
-    min-height: 100vh;
-    width: 100%;
-    background-color: black;
-    color: white;
-    box-sizing: border-box;
-    padding: 45px 30px;
-    display: flex;
-flex-direction: column;
-justify-content: space-between;
-background-image: url(../../images/secbg.png);
-background-position: center;
-background-size: cover;
-// border: 1px solid red;
-
->.h1{
-    color: #CCFF00;
-    display: flex;
-    align-items: center;
+.outer-body{
+    background-color: #002642;
+    >.project{
+        border-radius: 25px 25px 0px 0px;
+        min-height: 100vh;
+        width: 100%;
+        background-color: black;
+        color: white;
+        box-sizing: border-box;
+        padding: 45px 30px;
+        display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    width: 30%;
-    height: 50px;
-    border-radius: 50px;
-    background-color: black;
-    font-weight: 400;
-    // border: 1px solid white;
-    padding-left: 80px;
-    margin-bottom: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    >svg{
-        font-size: 40px;
+    background-image: url(../../images/secbg.png);
+    background-position: center;
+    background-size: cover;
+    // border: 1px solid red;
+    
+    >.h1{
+        color: #CCFF00;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 30%;
+        height: 50px;
+        border-radius: 50px;
+        background-color: black;
+        font-weight: 400;
+        // border: 1px solid white;
+        padding-left: 80px;
+        margin-bottom: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        >svg{
+            font-size: 40px;
+        }
+        >h1{
+    
+            font-family: "Bowlby One", sans-serif;
+            font-weight: 300; 
+        }
+        
     }
-    >h1{
-
-        font-family: "Bowlby One", sans-serif;
-        font-weight: 300; 
+    }
+    .projectsimages{
+        // border: 1px solid white;
+        height: 75%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    
     }
     
-}
-}
-.projectsimages{
-    // border: 1px solid white;
-    height: 75%;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-
-}
-
-.card-sites{
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    border: 2px solid #CCFF00;
-    height: 90%;
-    width: 25%;
-    background-color: #111111;
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-    flex-direction: column;
-    border-radius: 35px;
-    box-sizing: border-box;
-    padding: 10px;
-    transition: transform 0.3s ease-in-out;
-&:hover {
-    transform: scale(1.02);
-  }
-    >img{
-     background-position: center;
-     background-size: cover;
-       height: 400px;
-       width: 99%;
-       overflow: hidden;
-       border-radius: 25px 25px 5px 5px;
-    //    border: 1px solid red;
-    }
-    >h1{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    .card-sites{
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-        background-color: #CCFF00;
-        color: #111111;
+        border: 2px solid #CCFF00;
+        height: 90%;
+        width: 25%;
+        background-color: #111111;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        flex-direction: column;
+        border-radius: 35px;
         box-sizing: border-box;
-        padding: 0px 15px;
-        margin-top: 10px;
-        border-radius: 5px 5px 25px 25px;
-        font-weight: 400;
-        // border: 1px solid red;
-        >svg{
+        padding: 10px;
+        transition: transform 0.3s ease-in-out;
+    &:hover {
+        transform: scale(1.02);
+      }
+        >img{
+         background-position: center;
+         background-size: cover;
+           height: 400px;
+           width: 99%;
+           overflow: hidden;
+           border-radius: 25px 25px 5px 5px;
+        //    border: 1px solid red;
+        }
+        >h1{ 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+            background-color: #CCFF00;
+            color: #111111;
+            box-sizing: border-box;
+            padding: 0px 15px;
+            margin-top: 10px;
+            border-radius: 5px 5px 25px 25px;
+            font-weight: 400;
             // border: 1px solid red;
-            width: 35px;
-            height: 35px;
+            >svg{
+                // border: 1px solid red;
+                width: 35px;
+                height: 35px;
+            }
         }
     }
 }
 @media (max-width: 480px) {
-    .project{
+  .outer-body{
+    >  .project{
         .h1{
             width: 70%;
             padding-left: 15px;
@@ -124,3 +128,4 @@ background-size: cover;
 }  
 
 }
+  }

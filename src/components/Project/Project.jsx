@@ -4,7 +4,8 @@ import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import { FaBuildingCircleCheck } from "react-icons/fa6";
 const Project = () => {
   return (
-    <div className="project">
+    <div className="outer-body">
+      <div className="project">
       <div className="h1"><h1>Projects</h1><IoArrowForwardCircleOutline /></div>
       <div className="projectsimages">
         <div className="card-sites">
@@ -23,6 +24,7 @@ const Project = () => {
           <h1>PROJECT 3<FaBuildingCircleCheck /></h1> 
         </div> 
       </div>
+    </div>
     </div>
   );  
 }; 
