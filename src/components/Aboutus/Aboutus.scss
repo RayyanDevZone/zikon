@@ -1,68 +1,78 @@
-.about{
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-    color: white;
-    box-sizing: border-box;
-    padding: 20px 55px;
-    display: flex;
-    flex-direction: row;
-   
-} 
-.left-about{
-    // border: 1px solid rebeccapurple;
-    height: 100%;
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+
+.about {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  background-image: url("../../images/aboutbg.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  box-sizing: border-box;
+  padding: 20px 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    //  border: 1px solid white;
+  border-top: 2px dashed gray;
 }
-.right-about{
+.headDiv{
+    box-sizing: border-box;
+    height: 100%;
+    width: 30%;
+    // border: 1px solid white;
+    >h1{
+        margin-top: 35px;
+        font-family: "Edu VIC WA NT Beginner", cursive;
+        font-size: 27px;
+    }
+}
+.imageDiv{
+    box-sizing: border-box;
     // border: 1px solid red;
     height: 100%;
-    width: 45%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
- 
     >img{
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 5px;
-    }
-    
-}
-.top-left-about{
-    // border: 1px solid blue;
-    height: auto;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 15px 0px;
-  
-}
-h1{
-    font-family: "Space Grotesk", sans-serif;
-}
-.bottom-left-about{
-    // border: 1px solid green;
-    height: auto;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 15px 1px;
-    >p{
-        font-family: "Space Grotesk", sans-serif;
-    }
-}
-@media (max-width: 480px){
-    .about{
-        flex-direction: column;
-    }
-    .left-about{
+        border-radius: 15px;
+        height: 60%;
         width: 100%;
     }
-.right-about{
-    width: 100%;
 }
+.titleDiv{
+    box-sizing: border-box;
+    height: 100%;
+    width: 30%;
+    // border: 1px solid white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    >p{
+        // border: 1px solid red;
+        width: 98%;
+        margin-bottom:35px;
+        font-family: "Edu VIC WA NT Beginner", cursive;
+    }
+}
+
+@media (max-width: 480px) {
+  .about {
+    flex-direction: column;
+  }
+  .headDiv{
+    width: 100%;
+    height: auto;
+  }
+  .imageDiv{
+    width: 98%;
+    >img{
+        border-radius: 15px 50px 15px 50px;
+    }
+  }
+  .titleDiv{
+    width: 100%;
+    height: auto;
+  }
 }

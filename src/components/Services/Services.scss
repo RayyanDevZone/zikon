@@ -36,6 +36,7 @@
         font-weight: 300;
         // border: 1px solid red;
         width: auto;
+        padding-left: 10px;
       }
       > svg {
         font-size: 40px;
@@ -188,7 +189,13 @@
       height: 75%;
       width: 100%;
     }
+    >.outer-title{
+      >.titleservice{
+        width: 70%;
+      }
+    }
   }
+  
   .lowerservice {
     height: 50vh;
     padding: 0px;

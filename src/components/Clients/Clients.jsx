@@ -22,7 +22,7 @@ const Clients = () => {
           </div>
         </div>
         <div className="card-review">
-          <p>
+          <p> 
             "Zikon’s team was professional, efficient, and dedicated from start
             to finish. They handled every aspect of our project with precision
             and kept us informed every step of the way."
