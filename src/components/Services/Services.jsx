@@ -14,7 +14,7 @@ const Services = () => {
         </div>
         <div className="descService">
           <p>
-            At Zikon, we see construction as more than building structures—it’s
+            At Zikon, we see construction as more than building structures—it’s 
             about creating lasting foundations for growth and innovation. With
             expertise across civil, mechanical, and electrical construction, we
             bring unmatched precision and dedication to every project. Our
