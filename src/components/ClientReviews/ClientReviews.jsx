@@ -1,6 +1,6 @@
 import React from "react";
 import "./ClientReviews.scss";
-import person1 from '../../images/person1.jpg'
+
 import { IoMdPerson } from "react-icons/io";
 
 const ClientReviews = () => {
@@ -11,7 +11,7 @@ const ClientReviews = () => {
           <div className="card1">
             <div className="rating"><p>New visit by Buildtech</p></div>
             <div className="review">
-              <p>
+              <p> 
                 "Working with Zikon was a game-changer. Their attention to
                 detail and commitment to quality made all the difference in our
                 project. We couldn’t be happier with the results!"

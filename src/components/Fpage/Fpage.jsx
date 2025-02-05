@@ -19,7 +19,7 @@ const Fpage = () => {
             </div>
         </div>
         <div className="middle-lower">
-          <img src={fpbg}></img>
+          <img src={fpbg} alt=""></img>
           <div className="butn">
               <a
                 href="https://wa.me/919161642136"
