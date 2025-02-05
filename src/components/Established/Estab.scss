@@ -87,6 +87,18 @@ font-family: "Poppins", sans-serif;
     }
     .white{
         height: 80vh;
+        .card-container-white{ 
+            flex-direction: column;
+            height: 90%;
+            >.card-white{
+                width: 100%;
+                >#lt{
+
+                    height: 180px;
+                }
+            }
+        }
+
     }
     .card-container-grey{
         flex-direction: column;
@@ -94,13 +106,7 @@ font-family: "Poppins", sans-serif;
             width: 100%;
         }
     }
-    .card-container-white{ 
-        flex-direction: column;
-        height: 90%;
-        >.card-white{
-            width: 100%;
-        }
-    }
+    
   
 
 }
