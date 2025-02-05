@@ -106,14 +106,14 @@
       width: 60%;
     }
     > .btn-right {
-      padding: 5px;
+      padding: 0px 10px;
       border: 1px solid grey;
-      width: 60%;
+      width: 180px;
       height: 50px;
       border-radius: 50px;
       transform: rotate(90deg);
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       box-sizing: border-box;
       > p {
@@ -199,7 +199,7 @@
         }
 
         .btn-right {
-          width: 80%;
+          width: 180px;
           > p {
             margin: 0px;
           }
