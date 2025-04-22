@@ -1,107 +1,86 @@
 import React from "react";
-import "./ClientReviews.scss";
-
 import { IoMdPerson } from "react-icons/io";
+import { motion } from "framer-motion";
+import cardsbg from "../../images/cardsbg.png";
+
+const reviews = [
+  {
+    title: "New visit by Buildtech",
+    text: `"Working with Zikon was a game-changer. Their attention to detail and commitment to quality made all the difference in our project. We couldn’t be happier with the results!"`,
+    name: "Vineet Shah",
+    position: "Project Manager at BuildTech Solutions",
+  },
+  {
+    title: "Recently published.",
+    text: `"Zikon’s team was professional, efficient, and dedicated from start to finish. They handled every aspect of our project with precision and kept us informed every step of the way."`,
+    name: "Sonia Mehta",
+    position: "CEO of UrbanEdge Developments",
+  },
+  {
+    title: "",
+    text: `"I was thoroughly impressed with Zikon’s ability to deliver on time without compromising on quality. Their expertise across multiple sectors was clear, and the project outcome exceeded our expectations."`,
+    name: "Raghav Bansal",
+    position: "Operations Director at Innovate Infrastructure",
+  },
+  {
+    title: "",
+    text: `"Choosing Zikon was the best decision for our construction needs. They brought our vision to life with unmatched dedication and skill. I highly recommend their services."`,
+    name: "Priya Verma",
+    position: "Head of Facilities at Metro Builders",
+  },
+];
+
+const fadeIn = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.2,
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  }),
+};
 
 const ClientReviews = () => {
   return (
-    <div className="CLientReview">
-      <div className="cards-client">
-        <div className="parent-card">
-          <div className="card1">
-            <div className="rating"><p>New visit by Buildtech</p></div>
-            <div className="review">
-              <p> 
-                "Working with Zikon was a game-changer. Their attention to
-                detail and commitment to quality made all the difference in our
-                project. We couldn’t be happier with the results!"
-              </p>
-            </div>
-            <div className="client-details">
-              <div className="client-image">
-              <IoMdPerson />
+    <div
+      className="min-h-screen w-full py-10 px-4 md:px-10 flex flex-col items-center gap-10 bg-center bg-cover"
+      style={{ backgroundImage: `url(${cardsbg})` }}
+    >
+      <h1 className="text-3xl md:text-5xl font-semibold font-raleway text-center text-gray-800 drop-shadow">
+        FROM OUR SATISFIED CLIENTS
+      </h1>
+
+      <div className="w-full max-w-7xl flex  flex-wrap gap-6 justify-center">
+        {reviews.map((review, index) => (
+          <motion.div
+            key={index}
+            className="rounded-xl w-full  flex flex-col justify-between sm:w-[45%] lg:w-[22%] p-4 shadow-lg backdrop-blur-lg bg-center bg-cover"
+            style={{ backgroundImage: "url('/images/cardsbg.png')" }}
+            custom={index}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeIn}
+          >
+            {review.title && (
+              <p className="text-sm text-gray-500 mb-2">{review.title}</p>
+            )}
+            <p className="text-gray-800 font-medium mb-4">{review.text}</p>
+            <div className="flex items-center h-24 gap-3 px-3 bg-gray-100 rounded-xl shadow">
+              <div className="text-3xl w-12 text-gray-700">
+                <IoMdPerson />
               </div>
-              <div className="client-info">
-                {" "}
-                <h4>-Vineet Shah </h4>
-                <h5>Project Manager at BuildTech Solutions </h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="parent-card">
-          <div className="card2">
-            <div className="rating"><p>Recently published.</p></div>
-            <div className="review">
-              {" "}
-              <p>
-                "Zikon’s team was professional, efficient, and dedicated from
-                start to finish. They handled every aspect of our project with
-                precision and kept us informed every step of the way."
-              </p>
-            </div>
-            <div className="client-details">
-              <div className="client-image">
-              <IoMdPerson />
-              </div>
-              <div className="client-info">
-                {" "}
-                <h4>-Sonia Mehta </h4>
-                <h5>CEO of UrbanEdge Developments </h5>
+              <div>
+                <h4 className="font-semibold text-sm">{`- ${review.name}`}</h4>
+                <h5 className="text-xs text-gray-500">{review.position}</h5>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="parent-card">
-          <div className="card3">
-            <div className="rating"></div>
-            <div className="review">
-              <p>
-                "I was thoroughly impressed with Zikon’s ability to deliver on
-                time without compromising on quality. Their expertise across
-                multiple sectors was clear, and the project outcome exceeded our
-                expectations."
-              </p>
-            </div>
-            <div className="client-details">
-              <div className="client-image">
-              <IoMdPerson />
-              </div>
-              <div className="client-info">
-                {" "}
-                <h4>-Raghav Bansal </h4>
-                <h5> Operations Director at Innovate Infrastructure </h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="parent-card">
-          <div className="card4">
-            <div className="rating"></div>
-            <div className="review">
-              {" "}
-              <p>
-                "Choosing Zikon was the best decision for our construction
-                needs. They brought our vision to life with unmatched dedication
-                and skill. I highly recommend their services."
-              </p>
-            </div>
-            <div className="client-details">
-              <div className="client-image">
-              <IoMdPerson />
-              </div>
-              <div className="client-info">
-                <h4>-Priya Verma</h4>
-                <h5> Head of Facilities at Metro Builders </h5>
-              </div>
-            </div>
-          </div>
-        </div>
+          </motion.div>
+        ))}
       </div>
-      <div className="heading-client">
-        <h1>FROM OUR SATISFIED CLIENTS</h1>
-      </div>
-      <div className="excess-client"></div>
     </div>
   );
 };

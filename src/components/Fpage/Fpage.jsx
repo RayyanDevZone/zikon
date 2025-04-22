@@ -22,7 +22,7 @@ const Fpage = () => {
           <img src={fpbg} alt=""></img>
           <div className="butn">
               <a
-                href="https://wa.me/919161642136"
+                href="https://wa.me/916386535005"
                 target="_blank"
                 rel="noopener noreferrer"
               >

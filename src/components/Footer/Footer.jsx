@@ -14,9 +14,8 @@ const Footer = () => {
             <h3>Address</h3>
             <p>
               {" "}
-              380/2 <br />
-              GTB NAGAR KARELI
-              <br /> PRYAGRAJ, UTTAR PRADESH.
+              BP 76N/78K <br />
+               PRAYAGRAJ, UTTAR PRADESH.
             </p>
           </div>
           <div className="icon">
@@ -31,7 +30,7 @@ const Footer = () => {
             <p>
               Monday to Friday
               <br />
-              9:00 am to 5:00 pm
+              9:00 am to 6:00 pm
               <br />
               Weekends by appointment
             </p>
@@ -43,10 +42,10 @@ const Footer = () => {
         <div className="contact">
          <div> <h3>Stay connected</h3>
           <p className="ctc">
-            <IoIosCall /> +91 9161642136
+            <IoIosCall /> +91 6386535005
           </p>
           <p className="ctc">
-            <MdEmail /> zrassociates318@gmail.com
+            <MdEmail /> contact@zikon.in
           </p></div>
           <div className="icon">
           <RiContactsLine />

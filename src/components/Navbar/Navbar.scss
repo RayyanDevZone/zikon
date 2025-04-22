@@ -4,9 +4,12 @@
     background-color: black;
     position: sticky;
     // top: 15px;
-    // border-radius: 50px;
+    // border-radius: 50px; 
     margin: 0 auto;
     display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    align-items: center;
     padding: 0 20px;
     // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow */
     color:  white;
@@ -23,4 +26,27 @@ width: 100px;
 }
     
   }
-  
+
+  .navbar-button{
+margin-right: 30px;
+    height: 60px;
+    width: 390px;
+    background-color: white;
+border-radius: 15px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    >button{
+      height: 40px;
+      width: 100px;
+      cursor: pointer;
+      border-radius: 8px;
+      border:none;
+      background-color: chartreuse ;
+      transition: transform 0.2s ease;
+      font-weight: 600;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }}
